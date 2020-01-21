@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Надежда](https://up.htmlacademy.ru/htmlcss/27/user/1103541).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Ордина](https://htmlacademy.ru/profile/oelena) .
 
 ---
 
