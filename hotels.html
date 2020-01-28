@@ -20,7 +20,41 @@
     </header>
     <main>
       <h1>Поиск гостиниц в городе Седона</h1>
-      <!--Форма поиска гостиниц-->
+      <section>
+        <form action="#" method="">
+            <p>Инфраструктура:</p>
+            <label>
+              <input type="radio" name="infrastructure" value="Бассейн" checked>
+              Бассейн
+            </label>
+            <label>
+              <input type="radio" name="infrastructure" value="Парковка">
+              Парковка
+            </label>
+            <label>
+              <input type="radio" name="infrastructure" value="WiFi">
+              Wi-fi
+            </label>
+            <p>Тип жилья:</p>
+            <label>
+              <input type="radio" name="house" value="Гостиница" checked>
+              Гостиница
+            </label>
+            <label>
+              <input type="radio" name="house" value="Мотель" checked>
+              Мотель
+            </label>
+            <label>
+              <input type="radio" name="house" value="Апартаменты" checked>
+              Апартаменты
+            </label>
+            <p>Стоимость в сутки(р):</p>
+            <p>от 0</p>
+            <p>до 3000</p>
+            <input type="range" min="0" max="3000">
+            <input type="submit" value="Показать">
+        </form>
+      </section>
       <section>
         <h2>Результаты поиска</h2>
         <p>Найдено:3</p>
