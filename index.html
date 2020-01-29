@@ -7,7 +7,7 @@
 <body>
     <header>
         <nav>
-        <img src="logoSedona" width="" height="" alt="Логотип города Седона">
+        <img src="img/logoSedona.png" width="140" height="71" alt="Логотип города Седона">
         <ul>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
@@ -80,22 +80,22 @@
             <p>Поиск гостиницы в Седоне</p>
             <form action="#" method="get">
                 <label>Дата Заезда
-                    <button type="button">
-                        24 апреля 2017
-                        <img src="" alt="календарь">
-                    </button>
+                    <inpute type="text" name="arrival_date" value="24 апреля 2017">
+                    <img src="" alt="календарь">
                 </label>
                 <label>Дата Выезда
-                    <button type="button">
-                        4 июля 2017
-                        <img src="" alt="календарь">
-                    </button>
+                    <inpute type="text" name="departure_date" value="4 июля 2017">
+                    <img src="" alt="календарь">
                 </label>
                 <label>Взрослые
+                    <button type="button">+</button>
                     <input type="number" name="adult" min="1" step="1">
+                    <button type="button">-</button>
                 </label>
                 <label>Дети
+                    <button type="button">+</button>
                     <input type="number" name="child" min="0" step="1">
+                    <button type="button">-</button>
                 </label>
             <input type="submit" value="Найти">
         </form>
