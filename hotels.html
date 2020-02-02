@@ -19,10 +19,12 @@
         </nav>
     </header>
     <main>
-      <h1>Поиск гостиниц в городе Седона</h1>
+      <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
       <section>
+        <h2 class="visually-hidden">Фильтр поиска</h2>
         <form action="#" method="get">
-            <p>Инфраструктура:</p>
+          <fieldset>
+          <legend>Инфраструктура:</legend>
             <label>
               <input type="checkbox" name="pool" checked>
               Бассейн
@@ -35,7 +37,9 @@
               <input type="checkbox" name="wifi">
               Wi-fi
             </label>
-            <p>Тип жилья:</p>
+          </fieldset>  
+          <fieldset>
+            <legend>Тип жилья:</legend>
             <label>
               <input type="checkbox" name="hotel" checked>
               Гостиница
@@ -48,6 +52,7 @@
               <input type="checkbox" name="apartments" checked>
               Апартаменты
             </label>
+            </fieldset>
             <p>Стоимость в сутки(р):</p>
             <p>от 0</p>
             <p>до 3000</p>
@@ -56,7 +61,7 @@
         </form>
       </section>
       <section>
-        <h2>Результаты поиска</h2>
+        <h2 class="visually-hidden">Результаты поиска</h2>
         <p>Найдено:3</p>
         <p>сортировка:</p>
         <ul>
@@ -68,7 +73,7 @@
         <span></span><!--Стрелка вниз-->
         <ul>
           <li>
-            <img src="img/hotel_1.jpg" width="135" height="90" alt="Фото отеля Amare Resort&Spa">
+            <img src="img/hotel_1.jpg" width="135" height="90" alt="Одноэтажная гостиница на фоне леса и гор">
             <h3>AMARA RESORT& SPA</h3>
             <p>гостиница</p>
             <p>от 4000p.</p>
@@ -78,7 +83,7 @@
             <p>рейтинг 8,5</p>
           </li>
           <li>
-            <img src="img/hotel_2.jpg" width="135" height="90" alt="Фото отеля Desert Quail INN">
+            <img src="img/hotel_2.jpg" width="135" height="90" alt="Одноэтажный мотель у шоссе ">
             <h3>Desert Quail INN</h3>
             <p>мотель</p>
             <p>от 3000р.</p>
@@ -88,10 +93,10 @@
             <p>рейтинг 8,9</p>
           </li>
           <li>
-            <img src="img/hotel_3.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo">
+            <img src="img/hotel_3.jpg" width="135" height="90" alt="Одноэтажные апартаменты с большой зеленой территорией">
             <h3>Villas Poco Diablo</h3>
             <p>апартаменты</p>
-            <p>от 2000р</p>
+            <p>от 2000р.</p>
             <a href="#">Подробнее</a>
             <a href="#">Забронировать</a>
             <span></span><!--Звезды отеля-->
