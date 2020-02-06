@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy:Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="main-navigation">
         <img src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -17,9 +20,11 @@
         </nav>
     </header>
     <main>
+        <div class="title">
         <h1 class="visually-hidden">Город Седона</h1>
         <img src="img/welcomeSedona.svg" width="459" height="353" alt="Добро пожаловать в Седону">
-        <section>
+        </div>
+        <section class="advantages">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
             <p>Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
             <p>Рассотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
@@ -73,12 +78,13 @@
             </ul>
         </section>
 
-        <section>
+        <section class="seach">
             <h2 class="visually-hidden">Поиск гостиниц</h2>
-            <h3>Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a href="#">Поиск гостиницы в Седоне</a>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <h3 class="seach-subtitle">Заинтересовались?</h3>
+            <p>Укажите предполагаемые даты поездки,<br>
+                и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <a class="button-seach-form button-style1" href="#">Поиск гостиницы в Седоне</a>
+            <form class="seach-form" action="https://echo.htmlacademy.ru" method="get">
                 <p>
                     <label>Дата Заезда
                     <input type="text" name="arrival_date" placeholder="24 апреля 2017">
@@ -93,32 +99,33 @@
                 </p>
                 <p>
                     <label for="adult">Взрослые</label>
-                    <button type="button">+</button>
+                    <button class="button-switch" type="button">+</button>
                     <input type="number" name="adult" id="adult" min="1" step="1" placeholder="1">
-                    <button type="button">-</button>
+                    <button class="button-switch" type="button">-</button>
                 </p>
                 <p>
                     <label for="child">Дети</label>
-                    <button type="button">+</button>
+                    <button class="button-switch" type="button">+</button>
                     <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
-                    <button type="button">-</button>
+                    <button class="button-switch" type="button">-</button>
                 </p>
-                <button type="submit">Найти</button>
+                <button class="button-seach-form button-style2" type="submit">Найти</button>
             </form>
         </section>
-
+        <div class="map">
         <img src="img/map.jpg" width="1200" height="593" alt="Местоположение города Седона на карте">
+        </div>
     </main>
-    <footer>
-     <p><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
-     <div>
+    <footer class="footer">
+     <p class="footer-contacts"><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
+     <div class="footer-social">
         <ul>
-            <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
-            <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-            <li><a href="#"><span class="visually-hidden">Youtube</span></a></li>
+            <li><a class="button-social button-style2" href="#"><span class="visually-hidden button-style2">Twitter</span></a></li>
+            <li><a class="button-social button-style2" href="#"><span class="visually-hidden">Facebook</span></a></li>
+            <li><a class="button-social button-style2" href="#"><span class="visually-hidden">Youtube</span></a></li>
         </ul>
      </div>
-     <p>
+     <p class="footer-copyright">
         website by 
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHtmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
     </p>

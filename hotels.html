@@ -3,14 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>Седона:Поиск гостиниц</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header>
-        <nav>
+        <nav class="main-navigation">
         <a href="index.html">
         <img src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -20,7 +23,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Поиск гостиниц в городе Седона</h1>
-      <section>
+      <section class="filter-form">
         <h2 class="visually-hidden">Фильтр поиска</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
@@ -60,64 +63,64 @@
             <button type="submit">Показать</button>
         </form>
       </section>
-      <section>
+      <section class="search-result">
         <h2 class="visually-hidden">Результаты поиска</h2>
-        <p>Найдено:3</p>
-        <p>сортировка:</p>
-        <ul>
+        <p class="search-result-subtitle">Найдено:3</p>
+        <p class="sort">сортировка:</p>
+        <ul class="sort sort-items">
           <li><a href="#">по цене</a></li>
           <li><a href="#">по типу</a></li>
           <li><a href="#">по рейтингу</a></li>
         </ul>
         <span aria-label="стрелка вверх"></span><!--Стрелка вверх-->
         <span aria-label="стрелка вниз"></span><!--Стрелка вниз-->
-        <ul>
+        <ul class="search-result-items">
           <li>
             <img src="img/hotel_1.jpg" width="135" height="90" alt="Одноэтажная гостиница на фоне леса и гор">
             <h3>AMARA RESORT& SPA</h3>
             <p>гостиница</p>
             <p>от 4000p.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="button-search-result button-style2" href="#">Подробнее</a>
+            <a class="button-search-result button-style1" href="#">Забронировать</a>
             <span aria-label="4 звезды"></span><!--Звезды отеля-->
-            <p>рейтинг 8,5</p>
+            <p class="rating">рейтинг 8,5</p>
           </li>
           <li>
             <img src="img/hotel_2.jpg" width="135" height="90" alt="Одноэтажный мотель у шоссе ">
             <h3>Desert Quail INN</h3>
             <p>мотель</p>
             <p>от 3000р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="button-search-result button-style2" href="#">Подробнее</a>
+            <a class="button-search-result button-style1" href="#">Забронировать</a>
             <span aria-label="3 звезды"></span><!--Звезды отеля-->
-            <p>рейтинг 8,9</p>
+            <p class="rating">рейтинг 8,9</p>
           </li>
           <li>
             <img src="img/hotel_3.jpg" width="135" height="90" alt="Одноэтажные апартаменты с большой зеленой территорией">
             <h3>Villas Poco Diablo</h3>
             <p>апартаменты</p>
             <p>от 2000р.</p>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a class="button-search-result button-style2" href="#">Подробнее</a>
+            <a class="button-search-result button-style1" href="#">Забронировать</a>
             <span aria-label="2 звезды"></span><!--Звезды отеля-->
-            <p>рейтинг 9,2</p>
+            <p class="rating">рейтинг 9,2</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <p><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
-      <div>
+    <footer class="footer">
+      <p class="footer-contacts"><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
+      <div class="footer-social">
          <ul>
-          <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
-          <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
-          <li><a href="#"><span class="visually-hidden">Youtube</span></a></li>
+             <li><a class="button-social button-style2" href="#"><span class="visually-hidden button-style2">Twitter</span></a></li>
+             <li><a class="button-social button-style2" href="#"><span class="visually-hidden">Facebook</span></a></li>
+             <li><a class="button-social button-style2" href="#"><span class="visually-hidden">Youtube</span></a></li>
          </ul>
       </div>
-      <p>
-        website by 
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHtmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
-      </p>
-    </footer>
+      <p class="footer-copyright">
+         website by 
+         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoHtmlacademy.svg" width="115" height="41" alt="Логотип HTMLAcademy"></a>
+     </p>
+     </footer>
 </body>
 </html>
