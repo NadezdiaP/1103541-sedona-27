@@ -10,25 +10,29 @@
 <body>
     <header>
         <nav class="main-navigation">
-        <img src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
+        <div class="header-conteiner">
+        <img class="nav-logo" src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
         <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
+        </div>
         </nav>
     </header>
-    <main>
+    <main class="conteiner">
         <div class="title">
         <h1 class="visually-hidden">Город Седона</h1>
         <img src="img/welcomeSedona.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </div>
         <section class="advantages">
+            <div class="advantages-title">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
-            <p>Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+            <p class="advantages-subtitle">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
             <p>Рассотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-            <ul>
+            </div>
+            <ul class="advantages-items">
                 <li>
                     <h3>Настоящий<br>городок</h3>
                     <span>№1</span><!--№1 причина-->
@@ -78,13 +82,16 @@
             </ul>
         </section>
 
-        <section class="seach">
-            <h2 class="visually-hidden">Поиск гостиниц</h2>
-            <h3 class="seach-subtitle">Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки,<br>
-                и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <a class="button-seach-form button-style1" href="#">Поиск гостиницы в Седоне</a>
-            <form class="seach-form" action="https://echo.htmlacademy.ru" method="get">
+        <section class="search">
+            <div class="search-title">
+                <h2 class="visually-hidden">Поиск гостиниц</h2>
+                <h3 class="search-subtitle">Заинтересовались?</h3>
+                <p>Укажите предполагаемые даты поездки,<br>
+                    и мы покажем вам лучшие предложения гостиниц в седоне
+                </p>
+                <a class="button-search-form button-style1" href="#">Поиск гостиницы в Седоне</a>
+            </div>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <p>
                     <label>Дата Заезда
                     <input type="text" name="arrival_date" placeholder="24 апреля 2017">
@@ -135,6 +142,7 @@
                     </svg>
                     </button>
                 </p>
+                 <div class="visitors">
                 <p>
                     <label for="adult">Взрослые</label>
                     <button class="button-switch" type="button">+</button>
@@ -147,7 +155,8 @@
                     <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
                     <button class="button-switch" type="button">-</button>
                 </p>
-                <button class="button-seach-form button-style2" type="submit">Найти</button>
+                 </div>
+                <button class="button-search-form button-style2" type="submit">Найти</button>
             </form>
         </section>
         <div class="map">
@@ -155,6 +164,7 @@
         </div>
     </main>
     <footer class="footer">
+    <div class="footer-container">
      <p class="footer-contacts"><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
      <div class="footer-social">
         <ul>
@@ -171,6 +181,7 @@
         </svg>
         </a>
     </p>
+    </div>
     </footer>
 </body>
 </html>
