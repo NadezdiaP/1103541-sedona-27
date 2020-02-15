@@ -92,11 +92,12 @@
                 <a class="button-search-form button-style1" href="#">Поиск гостиницы в Седоне</a>
             </div>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                <p>
-                    <label>Дата Заезда
+                <div class="search-form-items">
+                <p class="form-item">
+                    <label>Дата Заезда:
                     <input type="text" name="arrival_date" placeholder="24 апреля 2017">
                     </label>
-                    <button type="button">
+                    <button class="button-calendar-1" type="button">
                         <svg class="calendar" width="21px" height="22px">	
                             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
                             c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
@@ -117,11 +118,11 @@
                     </svg>
                     </button>
                 </p>
-                <p>
-                    <label>Дата Выезда
+                <p class="form-item">
+                    <label>Дата Выезда:
                     <input type="text" name="departure_date" placeholder="4 июля 2017">
                     </label>
-                    <button type="button">
+                    <button class="button-calendar-2" type="button">
                         <svg class="calendar" width="21px" height="22px">	
                             <path d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
                             c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
@@ -142,20 +143,19 @@
                     </svg>
                     </button>
                 </p>
-                 <div class="visitors">
-                <p>
-                    <label for="adult">Взрослые</label>
-                    <button class="button-switch" type="button">+</button>
+                <p class="form-item">
+                    <label for="adult">Взрослые:</label>
+                    <button class="button-switch-plus1" type="button">+</button>
                     <input type="number" name="adult" id="adult" min="1" step="1" placeholder="1">
-                    <button class="button-switch" type="button">-</button>
+                    <button class="button-switch-minus1" type="button">-</button>
                 </p>
-                <p>
-                    <label for="child">Дети</label>
-                    <button class="button-switch" type="button">+</button>
+                <p class="form-item">
+                    <label for="child">Дети:</label>
+                    <button class="button-switch-plus2" type="button">+</button>
                     <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
-                    <button class="button-switch" type="button">-</button>
+                    <button class="button-switch-minus2" type="button">-</button>
                 </p>
-                 </div>
+                </div>
                 <button class="button-search-form button-style2" type="submit">Найти</button>
             </form>
         </section>
