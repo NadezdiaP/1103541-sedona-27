@@ -33,51 +33,61 @@
             <p>Рассотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <ul class="advantages-items">
-                <li>
+                <li class="advantages-item">
+                    <div class="reason item-1">
                     <h3>Настоящий<br>городок</h3>
                     <span>№1</span><!--№1 причина-->
                     <p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+                    </div>
                     <img src="img/city_view.jpg" width="800" height="256" alt="Деревянные домики на фоне гор">
                 </li>
-                <li>
+                <li class="advantages-item">
                     <section>
                         <h2 class="visually-hidden">Рекомендации</h2>
-                        <ul>
-                            <li>
+                        <ul class="recommend-items">
+                            <li class="recommend-item">
                                 <h3>Жилье</h3>
                                 <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
                             </li>
-                            <li>
+                            <li class="recommend-item">
                                 <h3>Еда</h3>
                                 <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                             </li>
-                            <li>
+                            <li class="recommend-item">
                                 <h3>Сувениры</h3>
                                 <p>Не только китайского, но и местного<br>производства!</p>
                             </li>
                         </ul>
                     </section>
                 </li>
-                <li>
+                <li class="advantages-item">
                     <img src="img/canyon_view.jpg" width="800" height="256" alt="Каменистый мост дьявола на фоне каньона">
+                    <div class="reason item-1">
                     <h3>Там есть<br>мост дьявола</h3>
                     <span>№2</span><!--№2 причина-->
                     <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+                    </div>
                 </li>
-                <li>
+                <li class="advantages-item">
+                    <div class="reason item-2">
                     <h3>Небольшая<br>площадь</h3>
                     <span>№3</span><!--№3 причина-->
                     <p>Все достопримечательности<br>находятся очень близко</p>
+                    </div>
                 </li>
-                <li>
+                <li class="advantages-item">
+                    <div class="reason item-2">
                     <h3>Красивая<br>дорога</h3>
                     <span>№4</span><!--№4 причина-->
                     <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+                    </div>
                 </li>
-                <li>
+                <li class="advantages-item">
+                    <div class="reason item-2">
                     <h3>Мало<br>туристов</h3>
                     <span>№5</span><!--№5 причина-->
                     <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+                    </div>
                 </li>
             </ul>
         </section>
@@ -143,18 +153,20 @@
                     </svg>
                     </button>
                 </p>
-                <p class="form-item">
+                    <div class="visitors">
+                     <p class="form-item">
                     <label for="adult">Взрослые:</label>
-                    <button class="button-switch-plus1" type="button">+</button>
+                    <button class="button-switch" type="button">+</button>
                     <input type="number" name="adult" id="adult" min="1" step="1" placeholder="1">
-                    <button class="button-switch-minus1" type="button">-</button>
-                </p>
-                <p class="form-item">
+                    <button class="button-switch" type="button">-</button>
+                     </p>
+                    <p class="form-item">
                     <label for="child">Дети:</label>
-                    <button class="button-switch-plus2" type="button">+</button>
+                    <button class="button-switch" type="button">+</button>
                     <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
-                    <button class="button-switch-minus2" type="button">-</button>
-                </p>
+                    <button class="button-switch" type="button">-</button>
+                    </p>
+                    </div>
                 </div>
                 <button class="button-search-form button-style2" type="submit">Найти</button>
             </form>
@@ -165,7 +177,7 @@
     </main>
     <footer class="footer">
     <div class="footer-container">
-     <p class="footer-contacts"><a href="#">#VISITSEDONA</a><br><a href="#">Тел:+7(495)666-02-66</a></p>  
+     <p class="footer-contacts"><a href="#">#VISITSEDONA</a><a href="#">Тел:+7(495)666-02-66</a></p>  
      <div class="footer-social">
         <ul>
             <li><a class="button-social button-style2" href="#"><span class="visually-hidden button-style2">Twitter</span></a></li>
