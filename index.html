@@ -102,8 +102,7 @@
             <div class="map">
             <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="search-form-items">
-                <p class="form-item">
-                    <label>Дата Заезда:
+                    <label class="form-item">Дата Заезда:
                         <input type="text" name="arrival_date" placeholder="24 апреля 2017">
                     </label>
                     <button class="button-calendar-1" type="button">
@@ -126,9 +125,7 @@
                             <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
                         </svg>
                     </button>
-                </p>
-                <p class="form-item">
-                    <label>Дата Выезда:
+                    <label class="form-item">Дата Выезда:
                         <input type="text" name="departure_date" placeholder="4 июля 2017">
                     </label>
                     <button class="button-calendar-2" type="button">
@@ -151,24 +148,19 @@
                             <rect x="13.781" y="8.225" width="2.625" height="2.066"/>
                         </svg>
                     </button>
-                </p>
                     <div class="visitors">
-                        <p class="form-item">
-                            <label class="adult" for="adult">Взрослые:</label>
+                            <label for="adult">Взрослые:</label>
                             <div class="wrapper-visit-button">
                                 <button class="button-switch" type="button">+</button>
                                 <input type="number" name="adult" id="adult" min="1" step="1" placeholder="1">
                                 <button class="button-switch" type="button">-</button>
                             </div>
-                        </p>
-                        <p class="form-item">
-                            <label class="child" for="child">Дети:</label>
+                            <label for="child">Дети:</label>
                             <div class="wrapper-visit-button">
                                 <button class="button-switch" type="button">+</button>
                                 <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
                                 <button class="button-switch" type="button">-</button>
                             </div>
-                        </p>
                     </div>
                 </div>
                 <button class="button-search button-style2" type="submit">Найти</button>
