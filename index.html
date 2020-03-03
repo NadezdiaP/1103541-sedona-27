@@ -9,7 +9,7 @@
 </head>
 <body>
     <header>
-        <nav class="main-navigation">
+        <nav class="main-navigation shadow">
         <img class="nav-logo" src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
         <ul class="site-navigation">
             <li class="site-navigation-item">
@@ -24,17 +24,17 @@
         </nav>
     </header>
     <main>
-        <div class="title">
+        <div class="title shadow">
             <h1 class="visually-hidden">Город Седона</h1>
             <img src="img/welcomeSedona.svg" width="459" height="353" alt="Добро пожаловать в Седону">
         </div>
         <section>
-            <div class="advantages-title">
+            <div class="advantages-title shadow">
                 <h2 class="visually-hidden">Преимущества Седоны</h2>
                 <p class="advantages-subtitle">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
                 <p>Рассотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
-            <ul class="advantages-items">
+            <ul class="advantages-items shadow">
                 <li class="advantages-item">
                     <div class="reason item-1">
                         <h3>Настоящий<br>городок</h3>
@@ -48,7 +48,7 @@
                         <h2 class="visually-hidden">Рекомендации</h2>
                         <ul class="recommend-items">
                             <li class="recommend-item">
-                                <h3>Жилье</h3>
+                                <h3>Жильё</h3>
                                 <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
                             </li>
                             <li class="recommend-item">
@@ -91,7 +91,7 @@
         </section>
 
         <section>
-            <div class="search-title">
+            <div class="search-title shadow">
                 <h2 class="visually-hidden">Поиск гостиниц</h2>
                 <h3>Заинтересовались?</h3>
                 <p>Укажите предполагаемые даты поездки,<br>
@@ -151,28 +151,29 @@
                     <div class="visitors">
                             <label for="adult">Взрослые:</label>
                             <div class="wrapper-visit-button">
-                                <button class="button-switch" type="button">+</button>
-                                <input type="number" name="adult" id="adult" min="1" step="1" placeholder="1">
                                 <button class="button-switch" type="button">-</button>
+                                <input type="text" name="adult" id="adult" placeholder="2">
+                                <button class="button-switch" type="button">+</button>
                             </div>
                             <label for="child">Дети:</label>
                             <div class="wrapper-visit-button">
-                                <button class="button-switch" type="button">+</button>
-                                <input type="number" name="child" id="child" min="0" step="1" placeholder="0">
                                 <button class="button-switch" type="button">-</button>
+                                <input type="text" name="child" id="child" placeholder="0">
+                                <button class="button-switch" type="button">+</button>
                             </div>
                     </div>
                 </div>
                 <button class="button-search button-style2" type="submit">Найти</button>
             </form>
-            <img src="img/map.jpg" width="1200" height="593" alt="Местоположение города Седона на карте">
-            </div>
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587632.118421145!2d-112.30908239153678!3d34.85095389778911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583139441598!5m2!1sru!2sru" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <img src="img/map.jpg" width="1200" height="593" alt="Местоположение города Седона на карте" class="shadow">
+        </div>
         </section>
     </main>
     <footer class="footer-container footer-index">
         <p class="footer-contacts">
             <a href="#">#VISITSEDONA</a>
-            <a href="#">Тел:+7(495)666-02-66</a>
+            <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </p>  
         <div class="footer-social">
         <ul>
@@ -214,5 +215,6 @@
             </a>
         </p>
     </footer>
+    <script src="js/modal-form.js"></script>    
 </body>
 </html>
