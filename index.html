@@ -4,23 +4,23 @@
     <meta charset="utf-8">
     <title>HTML Academy:Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize-min.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav class="main-navigation shadow">
-        <img class="nav-logo" src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
-        <ul class="site-navigation">
-            <li class="site-navigation-item">
-                <a href="#">Информация</a>
-                <a href="#">Фото и видео</a>
-            </li>
-            <li class="site-navigation-item">
-                <a href="#">Карта штата</a>
-                <a href="hotels.html">Гостиницы</a>
-            </li>  
-        </ul>
+            <img class="nav-logo" src="img/logoSedona.svg" width="140" height="71" alt="Логотип города Седона">
+            <ul class="site-navigation">
+                <li class="site-navigation-item">
+                    <a href="#">Информация</a>
+                    <a href="#">Фото и видео</a>
+                </li>
+                <li class="site-navigation-item">
+                    <a href="#">Карта штата</a>
+                    <a href="hotels.html">Гостиницы</a>
+                </li>  
+            </ul>
         </nav>
     </header>
     <main>
@@ -31,7 +31,7 @@
         <section>
             <div class="advantages-title shadow">
                 <h2 class="visually-hidden">Преимущества Седоны</h2>
-                <p class="advantages-subtitle">Седона-небольшой городок в Аризоне,<br>заслуживающий большего!</p>
+                <p class="advantages-subtitle">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
                 <p>Рассотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </div>
             <ul class="advantages-items shadow">
@@ -39,7 +39,7 @@
                     <div class="reason item-1">
                         <h3>Настоящий<br>городок</h3>
                         <span>—№1—</span>
-                        <p>Седона - не аттракцион для туристов,<br>там течет своя жизнь</p>
+                        <p class="reason-1">Седона — не аттракцион для туристов, там течет своя жизнь</p>
                     </div>
                     <img src="img/city_view.jpg" width="800" height="256" alt="Деревянные домики на фоне гор">
                 </li>
@@ -49,15 +49,15 @@
                         <ul class="recommend-items">
                             <li class="recommend-item">
                                 <h3>Жильё</h3>
-                                <p>Рекомендуем пожить в настоящем<br>мотеле, все как в кино!</p>
+                                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                             </li>
                             <li class="recommend-item">
                                 <h3>Еда</h3>
-                                <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                                <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                             </li>
                             <li class="recommend-item">
                                 <h3>Сувениры</h3>
-                                <p>Не только китайского, но и местного<br>производства!</p>
+                                <p>Не только китайского, но и местного производства!</p>
                             </li>
                         </ul>
                     </section>
@@ -67,29 +67,28 @@
                     <div class="reason item-1">
                         <h3>Там есть<br>мост дьявола</h3>
                         <span>—№2—</span>
-                        <p>Да, по нему можно пройти! Если конечно<br>вы осмелитесь</p>
+                        <p class="reason-2">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     </div>
                 </li>
                 <li class="advantages-item">
                     <div class="reason">
                         <h3>Небольшая<br>площадь</h3>
                         <span>—№3—</span>
-                        <p>Все достопримечательности<br>находятся очень близко</p>
+                        <p class="reason-3">Все достопримечательности находятся очень близко</p>
                     </div>
                     <div class="reason">
                         <h3>Красивая<br>дорога</h3>
                         <span>—№4—</span>
-                        <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+                        <p class="reason-4">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </div>
                     <div class="reason">
                         <h3>Мало<br>туристов</h3>
                         <span>—№5—</span>
-                        <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
+                        <p class="reason-5">Большинство едет в Гранд Каньон и толпится там</p>
                     </div>
                 </li>
             </ul>
         </section>
-
         <section>
             <div class="search-title shadow">
                 <h2 class="visually-hidden">Поиск гостиниц</h2>
@@ -149,24 +148,24 @@
                         </svg>
                     </button>
                     <div class="visitors">
-                            <label for="adult">Взрослые:</label>
-                            <div class="wrapper-visit-button">
-                                <button class="button-switch" type="button">-</button>
-                                <input type="text" name="adult" id="adult" placeholder="2">
-                                <button class="button-switch" type="button">+</button>
-                            </div>
-                            <label for="child">Дети:</label>
-                            <div class="wrapper-visit-button">
-                                <button class="button-switch" type="button">-</button>
-                                <input type="text" name="child" id="child" placeholder="0">
-                                <button class="button-switch" type="button">+</button>
-                            </div>
+                        <label for="adult">Взрослые:</label>
+                        <div class="wrapper-visit-button">
+                            <button class="button-switch" type="button">-</button>
+                            <input type="text" name="adult" id="adult" placeholder="2">
+                            <button class="button-switch" type="button">+</button>
+                        </div>
+                        <label for="child">Дети:</label>
+                        <div class="wrapper-visit-button">
+                            <button class="button-switch" type="button">-</button>
+                            <input type="text" name="child" id="child" placeholder="0">
+                            <button class="button-switch" type="button">+</button>
+                        </div>
                     </div>
                 </div>
                 <button class="button-search button-style2" type="submit">Найти</button>
             </form>
-            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587632.118421145!2d-112.30908239153678!3d34.85095389778911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583139441598!5m2!1sru!2sru" width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            <img src="img/map.jpg" width="1200" height="593" alt="Местоположение города Седона на карте" class="shadow">
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d587632.118421145!2d-112.30908239153678!3d34.85095389778911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1583139441598!5m2!1sru!2sru" width="1200" height="593" style="border:0;" allowfullscreen=""></iframe>
+            <img class="shadow" src="img/map.jpg" width="1200" height="593" alt="Местоположение города Седона на карте">
         </div>
         </section>
     </main>
@@ -176,35 +175,35 @@
             <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
         </p>  
         <div class="footer-social">
-        <ul>
-            <li>
-                <a class="button-twitter button-style2" href="#" aria-label="значек твиттер">
-                    <svg class="button-social" x="0px" y="0px" width="17px" height="15px">
-		                <path d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
-			            c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
-			            c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
-			            c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103
-			            C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
-			            c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="button-fb button-style2" href="#" aria-label="значек фэйсбук">
-                    <svg class="button-social" x="0px" y="0px" width="12px" height="22px">   
-                        <path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
-                    </svg>
-                </a>
-            </li>
-            <li>
-                <a class="button-youtube button-style2" href="#" aria-label="значек ютуб">
-                    <svg class="button-social" x="0px" y="0px" width="20px" height="16px">
-                        <path d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
-	                    M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
-                    </svg>
-                </a>
-            </li>
-        </ul>
+            <ul>
+                <li>
+                    <a class="button-twitter button-style2" href="#" aria-label="значек твиттер">
+                        <svg class="button-social" x="0px" y="0px" width="17px" height="15px">
+                            <path d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
+                            c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
+                            c-0.231,6.75-3.175,11.217-10.077,11.082c-0.522,0,0.075,0-0.446,0c-0.41,0-4.164-0.46-4.898-1.887
+                            c2.271,0.196,3.893-0.422,4.693-1.177c-0.96-0.3-2.679-0.477-2.979-2.95C2.064,9.09,2.279,9.212,2.905,9.103
+                            C1.705,8.247,0.374,7.53,0.448,5.33c0.285,0.328,1.067,0.536,1.34,0.472c-0.703-0.241-1.97-3.36-0.894-4.952
+                            c1.818,1.854,3.735,3.606,7.152,3.773C8.254,2.33,9.183,0.793,10.95,0.144z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="button-fb button-style2" href="#" aria-label="значек фэйсбук">
+                        <svg class="button-social" x="0px" y="0px" width="12px" height="22px">   
+                            <path d="M12,4V0H8C5.791,0,4,1.791,4,4v4H0v4h4v10h4V12h4V8H8V4H12z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="button-youtube button-style2" href="#" aria-label="значек ютуб">
+                        <svg class="button-social" x="0px" y="0px" width="20px" height="16px">
+                            <path d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
+                            M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
         <p class="footer-copyright">
             website by 
@@ -215,6 +214,6 @@
             </a>
         </p>
     </footer>
-    <script src="js/modal-form.js"></script>    
+    <script src="js/modal-form-min.js"></script>    
 </body>
 </html>
